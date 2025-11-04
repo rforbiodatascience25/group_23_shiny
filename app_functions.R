@@ -52,3 +52,20 @@ translate_rna <- function(rna){
     collapse = "")
   return(protein)
 }
+# Simple base counts
+base_freqs <- function(dna){
+  if (is.null(dna) || dna == "" ){
+    return( data.frame(dna_vec = factor(c("A", "C", "G", "T")),
+                       Freq = c(0, 0, 0, 0)) ) }
+  dna_vec <- strsplit(x = dna,
+                      split = "")
+  base_counts <- table(dna_vec)
+  return( as.data.frame.table(base_counts) )
+
+# Virtual RNA polymerase
+transcribe_dna <- function(dna){
+  rna <- gsub(
+    pattern = "T",
+    replacement = "U",
+    x = dna)
+  return(rna)
