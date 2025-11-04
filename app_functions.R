@@ -1,3 +1,7 @@
+# Load needed libraries
+library("shiny")
+library('bslib')
+
 gene_dna <- function(length, base_probs = c(0.25, 0.25, 0.25, 0.25)){
   if( length %% 3 != 0 ){
     stop("The argument to the parameter 'l' has to be divisible by 3")
