@@ -49,5 +49,12 @@ ui <- page_fluid(
       card_header("Virtual Gene output"),
       mainPanel(
         verbatimTextOutput(outputId = "dna")
-      )))
+      )),
+    
+    card(
+      card_header("Virtual translation output"),
+      mainPanel(
+        verbatimTextOutput(outputId = "ribosome")
+      )),
+    )
 )
