@@ -2,6 +2,9 @@
 library("shiny")
 library('bslib')
 
+# Load needed functions
+source(file = "app_functions.R")
+
 ui <- page_fluid(
   layout_columns(
     col_widths = 12,

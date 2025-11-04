@@ -2,6 +2,9 @@
 library("shiny")
 library('bslib')
 
+# Load needed functions
+source(file = "app_functions.R")
+
 server <- function(input, output) {
 
   pipeline_results <- reactive({
