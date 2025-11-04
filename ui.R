@@ -41,7 +41,17 @@ ui <- page_fluid(
                      label = 'Frequency of G',
                      min=0,
                      max = 1,
-                     value = 0.25)
+                     value = 0.25),
+        textInput(inputId = 'translation',
+                  label = 'Translation',
+                  value = 'paste DNA to translate into RNA',
+                  placeholder = "ATGC", 
+                  updateOn = "change"),
+        textInput(inputId = 'transcription',
+                  label = 'Transcription',
+                  value = 'paste RNA to transcribe to amino acids',
+                  placeholder = "AUGC", 
+                  updateOn = "change"),
       ))), 
   layout_columns(
     col_widths = 12,
