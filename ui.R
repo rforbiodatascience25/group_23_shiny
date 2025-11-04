@@ -51,7 +51,7 @@ ui <- page_fluid(
                   label = 'Transcription',
                   value = 'paste RNA to transcribe to amino acids',
                   placeholder = "AUGC", 
-                  updateOn = "change"),
+                  updateOn = "change")
       ))), 
   layout_columns(
     col_widths = 12,
