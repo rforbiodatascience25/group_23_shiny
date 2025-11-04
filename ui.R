@@ -8,8 +8,10 @@ ui <- page_fluid(
   layout_columns(
     col_widths = 12, 
     card(
-      titlePanel('About'),
-      helpText('This is  a gene generator.')
+      titlePanel('Virtual Gene Generator'),
+      helpText('This is  a gene generator: by specifying a length and the probabilities of having each nucleotide,
+               a dna sequence is generated, transcribed into rna and then translated into amino acids. The count of
+               each nucleotid of this dna sequence is also plotted.')
     )),
   layout_columns(
     col_widths = 12, 
