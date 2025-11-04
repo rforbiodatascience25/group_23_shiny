@@ -42,16 +42,16 @@ ui <- page_fluid(
                      min=0,
                      max = 1,
                      value = 0.25),
-        textInput(inputId = 'translation',
-                  label = 'Translation',
-                  value = 'paste DNA to translate into RNA',
-                  placeholder = "ATGC", 
-                  updateOn = "change"),
-        textInput(inputId = 'transcription',
-                  label = 'Transcription',
-                  value = 'paste RNA to transcribe to amino acids',
-                  placeholder = "AUGC", 
-                  updateOn = "change")
+        #textInput(inputId = 'translation',
+        #           label = 'Translation',
+        #           value = 'paste DNA to translate into RNA',
+        #           placeholder = "ATGC", 
+        #           updateOn = "change"),
+        # textInput(inputId = 'transcription',
+        #           label = 'Transcription',
+        #           value = 'paste RNA to transcribe to amino acids',
+        #           placeholder = "AUGC", 
+        #           updateOn = "change")
       ))), 
   layout_columns(
     col_widths = 12,
@@ -60,7 +60,7 @@ ui <- page_fluid(
       mainPanel(
         verbatimTextOutput(outputId = "dna"), 
         verbatimTextOutput(outputId = "rna"),
-        verbatimTextOutput(outputId = "amino acids"),
+        verbatimTextOutput(outputId = "amino_acids"),
         plotOutput(outputId = "freqPlot")
       )))
 )
