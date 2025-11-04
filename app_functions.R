@@ -23,6 +23,7 @@ base_freqs <- function(dna){
                       split = "")
   base_counts <- table(dna_vec)
   return( as.data.frame.table(base_counts) )
+}
 
 # Virtual RNA polymerase
 transcribe_dna <- function(dna){
@@ -31,3 +32,4 @@ transcribe_dna <- function(dna){
     replacement = "U",
     x = dna)
   return(rna)
+}
