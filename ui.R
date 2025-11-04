@@ -48,6 +48,9 @@ ui <- page_fluid(
     card(
       card_header("Virtual Gene output"),
       mainPanel(
-        verbatimTextOutput(outputId = "dna")
+        verbatimTextOutput(outputId = "dna"), 
+        verbatimTextOutput(outputId = "rna"),
+        verbatimTextOutput(outputId = "amino acids"),
+        plotOutput(outputId = "freqPlot")
       )))
 )
